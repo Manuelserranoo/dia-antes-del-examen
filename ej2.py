@@ -1,7 +1,10 @@
 def evaluar_lista():
-    lista = [1,2,3,4,5,6,7,8,9,10]
-    print(lista[14])
-    
+    paises = { 'españa':'español', 'eeuu':'inglés', 'italia':'italiano' } 
+    try:
+        paises['españa']
+    except KeyError:
+        print("Error: La clave del diccionario no se encuentra, debes probar con otra que sí exista.")
+    return paises
 
 
 if __name__ == "__main__":
