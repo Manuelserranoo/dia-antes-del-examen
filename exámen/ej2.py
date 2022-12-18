@@ -1,16 +1,15 @@
-#realizame un funcion que realice potencias de ecuaciones con 1 variable
-def potencia():
-    try:
-        x = int(input("Ingrese el valor de x: "))
-        y = int(input("Ingrese el valor de y: "))
-        potencia = x**y
-    except ValueError:
-        print("Error: No se puede elevar un str a un int")
-    
-    return potencia
+#crear una matriz de tamaño especificado por el usuario, llenarla de números aleatorios y mostrarla en pantalla.
+palabra = "defend the east wall"
+a =  palabra.replace(" ","")
+def crear_matriz(m,n):
+    for j in range(n):
+        return [[0 for j in range(n)] for i in range(m)]
+    for k in j:
+        if k == a[0]:
+            matriz.append(k)
 
-
-
+filas = int(input("Ingrese la clave: "))
+columnas  = len(a)
 if __name__ == "__main__":
-    print(potencia())
-
+    matriz = crear_matriz(filas,columnas)
+    print(matriz)
